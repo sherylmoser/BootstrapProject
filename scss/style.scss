@@ -1,8 +1,11 @@
+$lightGrey: #EEEEEE;
+$medLightGrey: #CCCCCC;
+
 body {
-    background-color: #dadfea;
+    background-color: $lightGrey;
 }
 .carouselContainer{
-    background-color: rgba(155, 154, 154, 0.708);
+    background-color: $medLightGrey;
     padding: 30px 0;
     #carouselCaptions, .carousel-inner {
         max-height: 550px;
@@ -12,4 +15,7 @@ body {
     .carousel-caption {
       padding-bottom: 50px;
     }  
+}
+.cardContainer {
+    padding: 30px 0;
 }

@@ -15,6 +15,24 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This is the modal body. Text goes here.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="carouselContainer">
         <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -76,9 +94,47 @@
             </button>
         </div>
     </div>
-    <div class="cardContainer">
-
-    </div>
+    <div class="cardContainer container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">1st Card</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsa
+                            delectus veritatis dicta, aliquam ea repellendus accusamus rem vel consequuntur ut
+                            consequatur quod nemo aspernatur expedita. Laboriosam, sapiente enim. Distinctio?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card text-center">
+                    <div class="card-header">
+                        2nd Card
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Modal Card</h5>
+                        <p class="card-text">This card has a button that leads to the modal</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Here is my modal
+                        </button>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Card Footer
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Third Card</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsa
+                            delectus veritatis dicta, aliquam ea repellendus accusamus rem vel consequuntur ut
+                            consequatur quod nemo aspernatur expedita. Laboriosam, sapiente enim. Distinctio?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
